@@ -252,16 +252,13 @@ function editarProducto(producto){
     pluInput.removeAttribute('disabled');
     eanInput.removeAttribute('disabled');
 
-    dateInput.setAttribute('required', "");
-    pluInput.setAttribute('required', "");
-
     btnSubir.addEventListener('click',()=>{
         producto.date = dateInput.value;
         producto.plu = pluInput.value;
         producto.ean = eanInput.value;
 
         if(eanInput.value == ""){
-            producto.ean = 'no se agrego un ean';
+            producto.ean = 'no se agrego un ean'
         }
         let transaccion = db.transaction(['Productos'], 'readwrite');
         let almacen = transaccion.objectStore('Productos');
