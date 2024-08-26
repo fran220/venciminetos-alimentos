@@ -1,0 +1,94 @@
+/* formulario */
+
+.formulario{
+    height: 100vh;
+    padding-top: 12rem;
+    background-color: var(--colorB);
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+.formulario .title{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.formulario .title,
+.formulario label{
+    text-align: center;
+}
+
+.formulario label,
+.formulario input{
+    display: block;
+}
+
+.formulario label{
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 2rem 0;
+}
+
+.formulario input{
+    width: 100%;
+    max-width: 95%;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: solid 1px black;
+    font-size: 1.7rem;
+}
+
+.formulario span{
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #ff4242;
+}
+
+.btnSubmit,
+.formulario .title{
+    letter-spacing: 2px;
+}
+
+.btnSubmit{
+    width: 100%;
+    max-width: 40%;
+    margin: 1rem 0 0 30%;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--colorBtn);
+    transition: all 0.7s;
+    color: var(--colorB);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btnSubmit:hover{
+    background-color: var(--colorBtnSubmit);
+    transition: all 0.7s;
+}
+
+/* media */
+
+@media only screen and (max-width:480px){
+    .formulario input{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .btnSubmit{
+        max-width: 65%;
+        padding: 1.3rem;
+        margin: 1rem 0 0 15% ;
+    }
+ }

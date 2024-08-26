@@ -1,0 +1,256 @@
+/* buscador */
+.contenedor-buscador{
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.buscador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenedor-buscador label{
+    color: var(--colorN);
+    font-size: 6.5rem;
+    cursor: pointer;
+}
+
+.contenedor-buscador input{
+    width: 100%;
+    max-width: 40%;
+    margin-top: 3rem;
+    padding: 1rem 0.7rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 2rem;
+}
+
+/* planilla */
+.planilla{
+    width: 100%;
+    padding: 8rem 0 2rem 0;
+}
+
+.contenedor-planilla{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.contenedor-planilla div{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* tabla */
+
+#tabla{
+    width: 100%;
+    background-color: var(--colorB);
+    color: var(--colorN);
+}
+
+th,
+td{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+th{
+    background-color: var(--colorGTh);
+    text-align: left;
+}
+
+#tabla,
+th,
+td{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+#tabla tr:nth-child(odd){
+    background-color: var(--colorG);
+}
+
+.td-btn{
+    padding: 5px;
+}
+.btn-ver{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--colorBtn);
+    color: var(--colorB);
+    transition: all 0.7s;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.btn-ver:hover{
+    transition: all 0.7s;
+    background-color: var(--colorBtnSubmit);
+}
+
+/* modal */
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.8);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.card{
+    width: 100%;
+    max-width: 25%;
+    height: auto;
+    margin: 10rem auto 0 auto;
+    background-color: var(--colorB);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card input,
+.card label,
+.card button{
+    font-size: 2rem;
+}
+
+.card .nombre-producto h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.card .nombre-producto{
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+    background-color: var(--colorBtn);
+}
+
+.card .cuerpo{
+    padding: 2rem;
+}
+
+.card label{
+    margin-bottom: 2rem;
+}
+
+.card input{
+    padding: 5px;
+}
+
+.card input,
+.card label{
+    display: block;
+}
+
+.card .botones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card .botones button{
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid 1px var(--colorG);
+    cursor: pointer;
+}
+
+.card button:hover,
+.card .editar:hover,
+.card .eliminar:hover{
+    transition: all 0.5s;
+}
+
+.card button:hover{
+    background-color: var(--colorG);
+}
+
+.card .editar:hover{
+    background-color: var(--colorBtn);
+}
+
+.card .eliminar:hover{
+    background-color: var(--colorBtneliminar);
+}
+
+
+/* javscript */
+
+.h-auto{
+    height: auto;
+}
+
+.h-100vh{
+    height: 100vh;
+}
+
+
+/* media */
+@media only screen and (max-width:480px){
+    /* buscador */
+    .contenedor-buscador{
+        max-width: 100%;
+    }
+
+    .contenedor-buscador input{
+        max-width: 70%;
+    }
+
+    /* planilla */
+
+    .contenedor-planilla{
+        max-width: 95%;
+        max-height: 100%;
+        padding: 0 0 2rem 0;
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    th,
+    td{
+        font-size: 1.7rem;
+        padding: 6px;
+    }
+
+    .btn-ver{
+        width: 100%;
+        padding: 30px 10px;
+        letter-spacing: 1px;
+    }
+    /* modal */
+    .card{
+        max-width: 85%;
+        margin: 5rem auto 0 auto;
+    }
+
+    .card input{
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+
+}

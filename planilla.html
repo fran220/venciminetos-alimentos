@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/planilla.css">
+    <title>Planilla de Vencimientos</title>
+</head>
+<body >
+    <nav class="navbar">
+        <a href="index.html" class="svg-back">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-left-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 2a10 10 0 0 1 .324 19.995l-.324 .005l-.324 -.005a10 10 0 0 1 .324 -19.995zm.707 5.293a1 1 0 0 0 -1.414 0l-4 4a1.048 1.048 0 0 0 -.083 .094l-.064 .092l-.052 .098l-.044 .11l-.03 .112l-.017 .126l-.003 .075l.004 .09l.007 .058l.025 .118l.035 .105l.054 .113l.043 .07l.071 .095l.054 .058l4 4l.094 .083a1 1 0 0 0 1.32 -1.497l-2.292 -2.293h5.585l.117 -.007a1 1 0 0 0 -.117 -1.993h-5.586l2.293 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" />
+            </svg>
+        </a>
+        <h1 class="navbar-link">Planilla de Venciminetos</h1>
+    </nav>
+    <section class="planilla h-100vh">
+        <div class="contenedor-buscador">
+            <div class="buscador">
+                <label for="buscador-input" id="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+                <input type="number" class="buscador-input" id="buscador-input" placeholder="ingrese el plu, ej: 470574">
+            </div>
+        </div>
+        <div class="contenedor-planilla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>     
+                        <th>Plu</th>     
+                        <th>Fecha Vencimiento</th>     
+                        <th>Ean</th>
+                        <th>Ver</th>     
+                    </tr>
+                </thead>
+                <tbody id="body-tabla">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="modal" id="modal-card"></div>
+    <script type="module" src="JS/planilla.js"></script>
+</body>
+</html>
