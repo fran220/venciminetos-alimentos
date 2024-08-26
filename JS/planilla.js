@@ -252,6 +252,9 @@ function editarProducto(producto){
     pluInput.removeAttribute('disabled');
     eanInput.removeAttribute('disabled');
 
+    dateInput.setAttribute('required');
+    pluInput.setAttribute('required');
+
     btnSubir.addEventListener('click',()=>{
         producto.date = dateInput.value;
         producto.plu = pluInput.value;
